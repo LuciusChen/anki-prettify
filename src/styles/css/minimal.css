@@ -296,6 +296,18 @@ pre {
   white-space: normal;
 }
 
+mark {
+  background: linear-gradient(
+  -100deg,
+  hsla(110, 100%, 80%, .3),
+  hsla(110, 100%, 80%, .7) 95%,
+  hsla(110, 100%, 80%, .1)
+  );
+  color: var(--text-fg);
+  border-radius: 1em 0;
+  padding: 0.05em;
+}
+
 /* -------------------------------------------------- CUSTOM FONTS */
 @font-face {
   font-family: Inter;
