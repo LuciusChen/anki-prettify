@@ -32,7 +32,7 @@ Links:
   --card-text-align: left;
   --font-size-regular: 16px;
   --font-size-small: 14px;
-  --font-family: 'Rubik', -apple-system, sytem-ui, BlinkMacSystemFont, Segoe UI,
+  --font-family: TsangerJinKai02, -apple-system, sytem-ui, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica, Arial, sans-serif;
   --img-width: 50%;
   --img-brightness: 1;
@@ -66,6 +66,12 @@ Links:
   --italic-fg: #{$nord13};
   --bold-italic-fg: #{$nord12};
   --underline-fg: #{$nord14};
+  --mark-bg: linear-gradient(
+    -100deg,
+    hsla(110, 100%, 80%, .3),
+    hsla(110, 100%, 80%, .7) 95%,
+    hsla(110, 100%, 80%, .1)
+  );
 }
 
 .card.night_mode {
@@ -94,6 +100,12 @@ Links:
   --italic-fg: #{$nord13};
   --bold-italic-fg: #{$nord12};
   --underline-fg: #{$nord14};
+  --mark-bg: linear-gradient(
+    -100deg,
+    hsla(270, 60%, 60%, .3),
+    hsla(270, 60%, 60%, .7) 95%,
+    hsla(270, 60%, 60%, .1)
+  );
 }
 
 /* -------------------------------------------------- BACKGROUND */
@@ -356,6 +368,13 @@ u {
 
 pre {
   white-space: normal;
+}
+
+mark {
+  background: var(--mark-bg);
+  color: var(--text-fg);
+  border-radius: 1em 0;
+  padding: 0.05em;
 }
 
 /* -------------------------------------------------- CUSTOM FONTS */

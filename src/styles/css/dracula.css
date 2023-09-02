@@ -14,7 +14,7 @@ Links:
   --card-text-align: left;
   --font-size-regular: 16px;
   --font-size-small: 14px;
-  --font-family: "Source Sans Pro", -apple-system, sytem-ui, BlinkMacSystemFont,
+  --font-family: TsangerJinKai02, -apple-system, sytem-ui, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   --img-width: 50%;
   --img-brightness: 1;
@@ -49,6 +49,12 @@ Links:
   --italic-fg: #f1fa8c;
   --bold-italic-fg: #ff5555;
   --underline-fg: #50fa7b;
+  --mark-bg: linear-gradient(
+    -100deg,
+    hsla(270, 60%, 60%, .3),
+    hsla(270, 60%, 60%, .7) 95%,
+    hsla(270, 60%, 60%, .1)
+  );
 }
 
 /* -------------------------------------------------- BACKGROUND */
@@ -277,6 +283,13 @@ u {
 
 pre {
   white-space: normal;
+}
+
+mark {
+  background: var(--mark-bg);
+  color: var(--text-fg);
+  border-radius: 1em 0;
+  padding: 0.05em;
 }
 
 /* -------------------------------------------------- CUSTOM FONTS */
